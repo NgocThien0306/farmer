@@ -10,14 +10,14 @@ class DocGia:
             self.ngay_dang_ki = datetime.now()
         else:
             self.ngay_dang_ki = ngay_dang_ki
-
+# them ham hien thi thong tin
     def hien_thi_thong_tin(self):
         print(f"Mã độc giả: {self.ma}")
         print(f"Tên độc giả: {self.ten}")
         print(f"Email: {self.email}")
         print(f"Số điện thoại: {self.sdt}")
         print(f"Ngày đăng ký: {self.ngay_dang_ki.strftime('%Y-%m-%d')}")
-
+# ham doc gia 
     def them_doc_gia(self, ds_doc_gia, doc_gia):
         ds_doc_gia.append(doc_gia)
         print(f"Đã thêm độc giả: {doc_gia.ten}")
@@ -41,7 +41,7 @@ class DocGia:
         if ma:
             doc_gia.ma = ma 
         print(f"Đã cập nhật thông tin độc giả: {doc_gia.ten}")
-
+#menu chuc nang 
     def chon_chuc_nang(self, ds_doc_gia):  # Thêm tham số ds_doc_gia
         menu = {
             1: 'hien_thi_thong_tin',
